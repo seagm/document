@@ -256,6 +256,11 @@ NONE
 ```
 GET /v1/card-categories 
 ```
+**Parameters:**
+
+Parameter | Default | Values
+------------ | ------------ | ------------
+mode | pin | pin / dereicttopup
 
 **Response:**
 ```javascript

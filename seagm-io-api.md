@@ -259,8 +259,8 @@ GET /v1/card-categories
 **Parameters:**
 
 Parameter | Default | Values
------------- | ------------ | ------------
-mode | pin | pin / dereicttopup
+----------- | ----------- | -----------
+mode | pin | pin, directtopup
 
 **Response:**
 ```javascript

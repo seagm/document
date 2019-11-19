@@ -392,7 +392,7 @@ POST /v1/card-orders
 ```
 
 Paramete | Example | Require
------------ | -----------
+----------- | ----------- | -----------
 type_id | 2 | true
 buy_amount | 1 | true
 {fields[0]:submitField} | str | only for direct top up

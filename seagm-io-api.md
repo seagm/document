@@ -67,30 +67,30 @@ It is important to **NOT** treat this as a failure; the execution status is
  * Signature for this request is not valid.
 
 ## 2xxx - Success
- * 请求成功
+ * Request successful 请求成功
 #### 2000 Get Success
- * 获取数据成功
+ * Get successful 获取数据成功
 #### 2010 Post Success
- * 订单下单成功
+ * Order created successfully 订单下单成功
 
 ## 4xxx - Request issues
- * 请求存在问题
+ * Request issue 请求存在问题
 #### 4000 Error
- * 出现错误
-#### 4010 缺少UID或者UID无效
-#### 4040 请求的内容不存在
-#### 4050 请求的方式不正确
+ * An error occured 出现错误
+#### 4010 missing UID or UID is invalid 缺少UID或者UID无效
+#### 4040 missing request information 请求的内容不存在
+#### 4050 request method incorrect 请求的方式不正确
 #### 4060 insufficient credit
 
 ## 5xxx - Server issues
-#### 5000 服务器故障
+#### 5000 Server failure 服务器故障
 
 # CURRENCY
 * Can only use SEAGM credits to buy cards
 
 # LIMITS
 * A 429 will be returned when either rather limit is violated.
-* When a 429 is recieved, it's your obligation as an API to back off and not spam the API.
+* When a 429 is received, it's your obligation as an API to back off and not spam the API.
 * **Repeatedly violating rate limits and/or failing to back off after receiving 429s will result in an automated IP ban (http status 418).**
 * IP bans are tracked and **scale in duration** for repeat offenders, **from 2 minutes to 3 days**.
 
@@ -234,7 +234,7 @@ NONE
 ```
 GET /v1/me?uid=10001&timestamp=xx&sign=xx
 ```
-获取余额等账户信息。
+Get user account balance & related details 获取余额等账户信息。
 
 **Parameters:**
 NONE

@@ -35,7 +35,7 @@ It is important to **NOT** treat this as a failure; the execution status is
 * Specific error codes
 ## 1xxx - Network issues
 #### 1000 UNKNOWN
- * An unknown error occured while processing the request.
+ * An unknown error occurred while processing the request.
 #### 1001 DISCONNECTED
  * Internal error; unable to process your request. Please try again.
 #### 1002 UNAUTHORIZED
@@ -76,7 +76,7 @@ It is important to **NOT** treat this as a failure; the execution status is
 ## 4xxx - Request issues
  * Request issue 请求存在问题
 #### 4000 Error
- * An error occured 出现错误
+ * An error occurred 出现错误
 #### 4010 missing UID or UID is invalid 缺少UID或者UID无效
 #### 4040 missing request information 请求的内容不存在
 #### 4050 request method incorrect 请求的方式不正确
@@ -234,7 +234,7 @@ NONE
 ```
 GET /v1/me?uid=10001&timestamp=xx&sign=xx
 ```
-Get user account balance & related details 获取余额等账户信息。
+Get user account balance & related details 获取余额等账户信息
 
 **Parameters:**
 NONE

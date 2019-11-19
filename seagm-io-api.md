@@ -318,7 +318,23 @@ GET /v1/card-categories/:id/card-types
             "unitPrice": 0, 
             "parValue": 10, 
             "parValueCurrency": "MYR", 
-            "maxAmount": 0
+            "maxAmount": 0,
+            "fields": [
+              {
+                "type": "input",
+                "label": "charge_account",
+                "expType": "",
+                "keyboardType": "default",
+                "multiline": false,
+                "tips": "",
+                "tipsImg": "",
+                "submitField": "charge_account",
+                "des": "",
+                "placeholder": "Please enter charge_account",
+                "prefix": "",
+                "position": 1
+              }
+            ]
         }, 
         {
             "id": 2, 
@@ -331,6 +347,8 @@ GET /v1/card-categories/:id/card-types
         },
         ...
  ```
+Fields is a supplementary field of direct top up
+submitField = key
 
 ### Get card type details
 ```
@@ -347,7 +365,23 @@ GET /v1/card-types/:id
         "unitPrice": 0, 
         "parValue": 10, 
         "parValueCurrency": "MYR", 
-        "maxAmount": 0
+        "maxAmount": 0,
+        "fields": [
+              {
+                "type": "input",
+                "label": "charge_account",
+                "expType": "",
+                "keyboardType": "default",
+                "multiline": false,
+                "tips": "",
+                "tipsImg": "",
+                "submitField": "charge_account",
+                "des": "",
+                "placeholder": "Please enter charge_account",
+                "prefix": "",
+                "position": 1
+              }
+            ]
     }
 }
 ```
@@ -356,6 +390,16 @@ GET /v1/card-types/:id
 ```
 POST /v1/card-orders 
 ```
+
+Paramete | Example | Require
+----------- | -----------
+type_id | 2 | true
+buy_amount | 1 | true
+{fields[0]:submitField} | str | only for direct top up
+{fields[1]:submitField} | str | only for direct top up 
+{fields[2]:submitField} | str | only for direct top up 
+...
+
 **Response:**
 ```javascript
 {
